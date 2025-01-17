@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Logo</title>
+
+        <style>
+        body {
+            background-color: rgb(231, 238, 251);
+        }
+
+        #background {
+            fill:url(#bg-gradient);
+        }
+
+        #upper {
+            fill:url(#upper-gradient);
+        }
+
+        #lower {
+            fill:url(#lower-gradient);
+        }
+
+        #lower:hover {
+            fill:url(#hover-gradient);
+        }
+
+        #upper:hover {
+            fill:url(#hover-gradient2);
+        }
+
+        #lower:active {
+            opacity: 0.5;
+        }
+
+        #upper:active {
+            opacity: 0.8;
+        }
+
+
+        svg {
+            width: 15em;
+            height: auto;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="logo">
+            <svg viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#3498db"/>
+                <stop offset="100%" stop-color="#8e44ad"/>
+                </linearGradient>
+                <linearGradient id="upper-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#8e44ad"/>
+                <stop offset="100%" stop-color="#ff7b98"/>
+                </linearGradient>
+                <linearGradient id="lower-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ff7b98"/>
+                <stop offset="100%" stop-color="#fff"/>
+                </linearGradient>
+            
+                <linearGradient id="hover-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#9ad4e4"/>
+                <stop offset="100%" stop-color="#fff"/>
+                </linearGradient>
+
+
+                <linearGradient id="hover-gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#e6e6fa"/>
+                    <stop offset="50%" stop-color="#87cefa"/>
+                    <stop offset="100%" stop-color="#fff"/>
+                </linearGradient>
+
+                
+                <linearGradient id="hover-gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ff92cd"/>
+                    <stop offset="50%" stop-color="#92c5ff"/>
+                    <stop offset="100%" stop-color="#fff"/>
+                </linearGradient>
+            
+            </defs>
+        
+            <rect id="background" x="0" y="0" width="200" height="200" rx="50" />
+
+            <a href="https://www.nyu.edu">
+                <path id="upper" d="M100 40 L60 120 L40 120 L100 20 L160 120 L140 120 Z"/>
+            </a>
+
+            <a href="https://i6.cims.nyu.edu/~zt2113/css/">
+                <polygon id="lower" points="100,70 80,110 90,120 110,120 120,110"/>
+            </a>
+
+            <text x="100" y="175"  text-anchor="middle" fill="white" font-family="Arial Black" font-size="40">ZT</text>
+            </svg>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Personal Professional Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1><a href="index.html">Personal Professional Page</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#introduction">Introduction</a>
+                <a href="#projects">My Web Design</a>
+                <a href="#social-media">Social Media</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="background">
+                <img width="800" height="536" src="images/laptop.png" srcset="images/laptop-800.png 800w, images/laptop-1600.png 1600w, images/laptop-2400.png 2400w" alt="A laptop on white desk">
+                <div class="greeting-container">
+                    <p id="greeting"></p>
+                </div>
+                <div class="centered-title">
+                    <h1 style="margin:0px;margin-right:0px;">ZILIN</h1>
+                    <a href="index.html">Home</a>
+                    <a href="https://i6.cims.nyu.edu/~zt2113/css/">About Me</a>
+                    <a href="https://i6.cims.nyu.edu/~zt2113/">My Web Design</a>    
+                </div>
+            </div>
+
+            
+            <article  id="introduction">
+                <h3>Hi! I'm Zilin.</h3>
+                <div class="grid-container-one">
+                    <p>I am currently a sophomore student at New York University, majoring in Computer Science. My study experience has led me to explore various programming languages, such as Python and Java. They have been instrumental in triggering my interest in the field. In addition, I am also studying web design with HTML, CSS, and JavaScript, further expanding my skillset and passion for engaging in the cs field.</p>
+    
+                    <p>I also have diverse interests outside of my major, including history, animals, and literature. These diverse interests has motivated me to seek opportunities that allows me to merge my love for technology and these other domains. I am eager to apply my computer science knowledge in projects that not only related to technically but also allow me to explore all these fascinating domains. By doing so, I hope to create meaningful solutions and innovations.</p>
+                </div>
+            </article>
+
+            <figure id="projects">
+                <h2>My Projects</h2>
+                <div class="grid-container-two">
+                    <div class="grid-item-left">
+                        <iframe src="https://i6.cims.nyu.edu/~zt2113/css/" width="600" height="450" style="border:0"></iframe>
+                    </div>
+                    <div class="grid-item-right">
+                        <p>This is the first project I did when I was studying Web Design, which is a home page about myself. It contains some personal information about me, my interests, and something not really important but I would like to mention - my pets that I love very much. This project may look pretty simple now, but I really like this one because it's not quite the same as any of my subsequent designs for the website. It looks much cuter for me, and I'm really delighted by the light and colorful color scheme, especially considering that I've chosen darker colors for most subsequent projects.</p>
+                        <button type="button"><a href="https://i6.cims.nyu.edu/~zt2113/css/">GO</a></button>
+                    </div>
+                </div>
+                <div class="grid-container-three">
+                    <div class="grid-item-left">
+                        <p>One of my recent projects is a historical website focused on the ancient Chinese bureaucratic system and power dynamics. This topic has been of great interest to me since my high school years, during which I also engaged in related reading and have written essays on this topic. Building a historical website is always attractive for me, and this project allowed me to combine my love for history with my web design skills. In the past, I have also made a website about Three Kingdoms period and tried to analyze the classic novel "Romance of the Three Kingdoms" through data analysis with my high school teacher. For the ancient Chinese bureaucratic system website, I implemented a timeline-like design to effectively illustrate the shifts in power throughout history. Although this makes me spend a long time adjusting the layout, I still found the process to be interesting.</p>
+                        <button type="button"><a href="https://i6.cims.nyu.edu/~zt2113/javascript/">GO</a></button>
+                    </div>
+                    <div class="grid-item-right">
+                        <iframe src="https://i6.cims.nyu.edu/~zt2113/javascript/" width="600" height="450" style="border:0"></iframe>
+                    </div>
+                </div>
+            </figure>
+
+            <figure  id="social-media">
+                    <h2>Social Media</h2>
+                <div class="social-media-container">
+                    <div>
+                        <a href="https://www.lofter.com/"><img class="left-img" src="images/lofter-logo.png" alt="lofter logo"></a>
+                        <img class="right-img" width="380" height="380" src="images/lofter-post2.png" srcset="images/lofter-post2-800.png 800w, images/lofter-post2-1200.png 1200w" alt="lofter post">
+                    </div>
+                    <div>
+                        <a href="https://mastodon.social/explore"><img class="left-img" src="images/mastodon-logo.png" alt="mastodon logo"></a>
+                        <img class="right-img" width="380" height="380" src="images/mastodon-post2.png" srcset="images/mastodon-post2-800.png 800w, images/mastodon-post2-1200.png 1200w" alt="instagram post">
+                    </div>
+                    <div>
+                        <a href="https://weibo.com/login.php"><img class="left-img" src="images/weibo-logo.png" alt="weibo logo"></a>
+                        <img class="right-img" width="380" height="380" src="images/weibo-post2.png" srcset="images/weibo-post2-800.png 800w, images/weibo-post2-1200.png 1200w" alt="weibo post">
+                    </div>
+                </div>        
+
+            </figure>
+
+
+        </main>
+
+        <footer>
+            <button onclick="toggleColorMode()">Color Mode</button>
+            <p id="credit"><a href="https://www.nyu.edu">Intro to Web Design</a></p>
+        </footer>
+        <script src="index-page.js"></script>
+    </div>
+</body>
+</html>
